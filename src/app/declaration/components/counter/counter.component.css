@@ -1,0 +1,14 @@
+#textHeart{
+  text-align: center;
+  position: relative;
+  margin-top: 5px;
+  color: crimson;
+  z-index: 1;
+}
+
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  color: crimson;
+}
