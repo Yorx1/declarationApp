@@ -1,11 +1,11 @@
 
-<div #asCard class="card" id="cardOption" style="width: 20rem;">
+<div #asCard *ngIf="text == false;else showText" class="card" id="cardOption" style="width: 20rem;">
   <h3 class="mx-auto">Would like to be with me?</h3>
   <hr>
   <div class="container text-center">
     <div class="row card-body">
       <div class="col">
-        <button class="btn btn-outline-success">yes</button>
+        <button class="btn btn-outline-success" (click)="yesDecision()" >yes</button>
       </div>
       <div class="col">
         <button class="btn btn-outline-danger" (mousemove)="NoDecision()">no</button>
@@ -15,3 +15,32 @@
   </div>
 </div>
 
+
+<ng-template #showText>
+
+  <!-- <div class="bd-text">
+    <p class="text-center">
+      As I sit here typing away lines of code, my thoughts keep drifting back to you.
+      Just like how an algorithm follows a set of instructions, my heart follows yours with unwavering devotion.
+    </p>
+  </div> -->
+
+
+
+  <div class="rotating-text-wrapper">
+    <p>OF</p>
+    <p>ALL</p>
+    <p>THE</p>
+    <p>VARIABLES</p>
+    <p>YOU</p>
+    <p>ARE</p>
+    <P>MY</P>
+    <p>ONLY</p>
+    <p>CONSTANT</p>
+  </div>
+
+
+
+
+
+</ng-template>

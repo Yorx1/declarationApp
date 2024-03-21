@@ -5,14 +5,14 @@ import { Injectable } from '@angular/core';
 
 export class DeclarationService {
 
-  amount:number = 0
+  amount:number = 0;
 
   noOptions(){
-    this.amount += 1
+   this.amount += 1;
   }
 
   yesOption(){
-    this.amount -= 1
+    this.amount = 0;
   }
 
 }
